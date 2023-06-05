@@ -11,6 +11,7 @@ const Header = () => {
     return (
         <div className='header'>
             <Button onClick={onClose}>Закрыть</Button>
+            <p>{user}</p>
             <Routes>
                 <Route path={'/form'} element={<Form/>}/>
             </Routes>
