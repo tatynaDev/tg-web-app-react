@@ -43,16 +43,16 @@ const Form = () => {
                 <option value="Белый" defaultValue={color}>Белый</option>
             </select>
 
-            <label htmlFor="quantity">Напишите количество:</label>
+            <label className={'label'} htmlFor="quantity">Напишите количество:</label>
             <input className={'input'} type="text" id="quantity" value={quantity} onClick={onQuantityChange} required/>
 
-            <label htmlFor="size">Размер одежды:</label>
+            <label className={'label'} htmlFor="size">Размер одежды:</label>
             <input className={'input'} type="text" id="size" value={size} onClick={onSizeOfDress} required/>
 
-            <label htmlFor="sizePrint">Размер принта:</label>
+            <label className={'label'} htmlFor="sizePrint">Размер принта:</label>
             <input className={'input'} type="text" id="sizePrint" value={sizePrint} onClick={onSizeOfPrint} required/>
 
-            <label htmlFor="address">Если хотите с доставкой, то заполните здесь:</label>
+            <label className={'label'} htmlFor="address">Если хотите с доставкой, то заполните здесь:</label>
             <input className={'input'} type="text" id="address" onClick={onSetAddress} value={address} placeholder={"Р. Ул. № дом."}/>
             <input className={'input'} type="text" id="tel" onClick={onSetPhoneNumber} value={phone} placeholder={"Номер телефона:"}/>
         </div>
