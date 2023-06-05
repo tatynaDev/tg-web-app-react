@@ -37,24 +37,24 @@ const Form = () => {
         <div className='form'>
             <h3>Заполните форму для заказа:</h3>
 
-            <select onSelect={onColorChange}>
+            <select className={'select'} onSelect={onColorChange}>
                 <option selected={true}>Цвет</option>
                 <option value="Черный" defaultValue={color}>Черный</option>
                 <option value="Белый" defaultValue={color}>Белый</option>
             </select>
 
             <label htmlFor="quantity">Напишите количество:</label>
-            <input type="text" id="quantity" value={quantity} onClick={onQuantityChange} required/>
+            <input className={'input'} type="text" id="quantity" value={quantity} onClick={onQuantityChange} required/>
 
             <label htmlFor="size">Размер одежды:</label>
-            <input type="text" id="size" value={size} onClick={onSizeOfDress} required/>
+            <input className={'input'} type="text" id="size" value={size} onClick={onSizeOfDress} required/>
 
             <label htmlFor="sizePrint">Размер принта:</label>
-            <input type="text" id="sizePrint" value={sizePrint} onClick={onSizeOfPrint} required/>
+            <input className={'input'} type="text" id="sizePrint" value={sizePrint} onClick={onSizeOfPrint} required/>
 
             <label htmlFor="address">Если хотите с доставкой, то заполните здесь:</label>
-            <input type="text" id="address" onClick={onSetAddress} value={address} placeholder={"Р. Ул. № дом."}/>
-            <input type="text" id="tel" onClick={onSetPhoneNumber} value={phone} placeholder={"Номер телефона:"}/>
+            <input className={'input'} type="text" id="address" onClick={onSetAddress} value={address} placeholder={"Р. Ул. № дом."}/>
+            <input className={'input'} type="text" id="tel" onClick={onSetPhoneNumber} value={phone} placeholder={"Номер телефона:"}/>
         </div>
     );
 };
