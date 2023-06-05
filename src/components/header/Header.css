@@ -4,10 +4,10 @@
     padding: 0 20px;
     display: flex;
     align-content: center;
+    justify-content: space-between;
 }
 
 .username {
-    margin-left: auto;
     line-height: 0;
     padding: 10px 0;
 }
