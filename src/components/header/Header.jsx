@@ -8,15 +8,15 @@ import Form from "../form/Form";
 const Header = () => {
     const {user, onClose} = useTelegram()
 
-    return (<>
+    return (
         <div className='header'>
-            <Button onClick={onClose}>Закрыть</Button>
-            <p className={'username'}>{user?.username}</p>
+            <Button onClick={onClose}>Закрыть <span className={'username'}>{user?.username}</span></Button>
+            <Routes>
+                <Route path={'/form'} element={<Form/>}/>
+            </Routes>
         </div>
-        <Routes>
-            <Route path={'/form'} element={<Form/>}/>
-        </Routes>
-    </>);
+
+    );
 };
 
 export default Header;
