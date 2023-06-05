@@ -1,4 +1,10 @@
-.header {
+.headerGen {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+header {
     height: 50px;
     width: 100%;
     padding: 0 20px;
